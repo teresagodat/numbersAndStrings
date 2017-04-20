@@ -46,7 +46,7 @@ function clearForm() {
   total = 0;
   sum = 0;
   $('#conCat').text("");
-  $('#stingsTotal').text(stringText.length);
+  $('#stringsTotal').text(stringText.length);
 
   updateNumbers();
 }
