@@ -52,4 +52,5 @@ function clearForm() {
   $('#stringsTotal').text(stringText.length);
 
   updateNumbers();
+  updateText();
 }
