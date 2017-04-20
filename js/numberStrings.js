@@ -6,7 +6,7 @@ var sum = 0;
 $('#submit').on('click', startAdd);
 $('#reset').on('click', clearForm);
 
-
+// add text that is inputed//
 function startAdd () {
   var addData = $("#textInput").val();
   if ($.isNumeric(addData)){
@@ -24,6 +24,7 @@ function startAdd () {
 
 }
 
+//update numbers entered and display stats//
 function updateNumbers () {
   var average = sum/total;
   if(isNaN(average)) {
@@ -34,6 +35,7 @@ function updateNumbers () {
   $('#sum').text(sum);
 }
 
+//update strings entered and display stats//
 function updateText(addData) {
   var text = addData.toLowerCase().split(" ");
   
@@ -41,6 +43,7 @@ function updateText(addData) {
   $('#stringsTotal').text(stringText.length);
 }
 
+//clear numbers and strings stats//
 function clearForm() {
   stringText = [];
   total = 0;
