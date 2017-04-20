@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Courgette&amp;Neucha" rel="stylesheet"> 
+  <title>HTML5 APIs: Assignment 2</title>
+  </head>
+  <body>
+    <header>
+    <div>
+      <h1>Numbers and Strings</h1> 
+      <p>
+          Enter some text. Enter some numbers. Validate the text gets added under the Strings section of the page. Validate the numbers get added to the Numbers section of the page.
+      </p>
+    </div> 
+    </header>
+    <section>
+    <h3>Add a Number or String of Text</h3>
+    <form class="numberString" id=numberStringForm>
+        <div>
+        <label>Enter numbers and strings here:</label>
+        <input type="text" name="number" id="textInput" class="textBoxInput">
+        <button type="button" id="submit" class="btn btn-primary">Submit</button>
+        <button type="button" id="reset" class="btn btn-primary">Reset</button>
+        </div>
+    </form>
+        <div id="numberStats">
+        <p>Count: <span id="count">0</span></p>
+        <p>Sum: <span id="sum">0</span></p>
+        <p>Average: <span id="average">0</span></p>
+    </div>
+    <div id="stringStats">
+    <h3>Strings</h3>
+        <p><span id="conCat"></span></p>
+        <p>Number of Strings: <span id="stringsTotal"></span></p>
+    </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/numberStrings.js">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 100%;
+    max-height: auto;
+    margin-left: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;                
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+.numberString {
+  border: .5rem solid grey;
+  padding: 2rem;
+  font-family: 'Neucha', cursive;
+  font-size: 1.5rem;
+  background-color: lightyellow;
+  color: grey;
+}
+
+p {
+
+  font-size: 1.0rem;
+  padding-left: 1rem;
+}
+
+
+@media only screen and (max-width: 480px)  {
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    font-size: 1.5rem;
+  }
+}
